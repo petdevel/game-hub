@@ -1,6 +1,7 @@
+import image from '../assets/no-image.webp'
 
 const GetCroppedImageUrl = (url: string) => {
-    if (!url) return "";
+    if (!url) return image;
 
     const target = "media/";
     const index = url.indexOf(target) + target.length;
